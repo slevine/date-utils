@@ -1,0 +1,13 @@
+{
+  "name": "data-utils",
+  "main": "./lib/date-utils",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Maps keyboard shortcut to date format",
+  "activationEvents": ["date-utils:insert"],
+  "repository": "https://github.com/atom/ascii-art",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.39.0"
+  }
+}
