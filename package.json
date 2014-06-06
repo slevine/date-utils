@@ -5,7 +5,7 @@
   "private": true,
   "description": "Maps keyboard shortcut to date format",
   "activationEvents": ["date-utils:insert"],
-  "repository": "https://github.com/atom/ascii-art",
+  "repository": "https://github.com/slevine/date-utils",
   "license": "MIT",
   "engines": {
     "atom": ">0.39.0"
