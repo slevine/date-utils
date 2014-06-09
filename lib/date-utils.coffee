@@ -14,7 +14,7 @@ dayOfWeek = (date) ->
   weekday[4] = "Thursday"
   weekday[5] = "Friday"
   weekday[6] = "Saturday"
-  weekday[date.getMonth()]
+  weekday[date.getDay()]
 
 module.exports =
   activate: ->
