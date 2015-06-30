@@ -18,9 +18,8 @@ dayOfWeek = (date) ->
 
 module.exports =
   activate: ->
-    atom.workspaceView.command "date-utils:insert", => @insert()
+    atom.commands.add 'atom-workspace', "date-utils:insert", => @insert()
 
   insert: ->
-    now = new Date
-    selection = atom.workspace.getActiveEditor().getSelection()
-    selection.insertText("### " + dayOfWeek(now) + " " + formatDate now)
+    editor = atom.workspace.getActivePaneItem()
+    editor.insertText("### " + dayOfWeek(new Date) + " " + formatDate(new Date))
